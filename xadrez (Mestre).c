@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Recursivas dos movimentos de torre, bispo e rainha.
+
 void MoverTorre(int numero){
     if (numero > 0){
         printf("Direita \n");
@@ -23,33 +25,33 @@ void MoverRainha(int numero){
 
 int main() {
     
-    //Movimento da torre
-    int torre = 5;
+    //Movimento da torre (recursiva)
+    int torre = 5; // número de repetições
     printf("\n");
-    printf("-----Movimento da torre-----\n");
+    printf("-----Movimento da torre-----\n"); 
     printf("\n");
     MoverTorre(torre);
 
-    //Movimento do bispo
-    int bispo = 5;
+    //Movimento do bispo (recursiva)
+    int bispo = 5; // número de repetições
     printf("\n");
     printf("-----Movimento do bispo-----\n");
     printf("\n");
     MoverBispo(bispo);
 
-    //Movimento da rainha
-    int rainha = 7;
+    //Movimento da rainha (recursiva)
+    int rainha = 7; // número de repetições
     printf("\n");
     printf("-----Movimento da rainha-----\n");
     printf("\n");
     MoverRainha(rainha);
 
 
-    // Movimento do Cavalo (2 casas para cima e 1 para a direita) com loops aninhados
+    // Movimento do Cavalo (loops aninhados)
     printf("\n");
     printf("-----Movimento do Cavalo-----\n");
     printf("\n");
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 2; i++) { //
         printf("Cima\n");
     }
     for (int j = 0; j < 1; j++) {
